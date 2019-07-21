@@ -16,20 +16,23 @@ var stampa;
 stampa = document.getElementById('my');
 
 // Faccio il ciclo for
+// Faccio la stampa in ul
+
 
 for (i = 1; i < 101; i++) {
   // console.log(i);
   // Faccio le causali
-  if (i % 3 == 0) {
-    console.log("Fizz");
+  if (i % 5 == 0 && i % 3 == 0) {
+    console.log("FizzBuzz");
+    // stampa.innerHTML = "<li>" + "FizzBuzz" + "</li>";
   } else if (i % 5 == 0) {
     console.log("Buzz");
-  } else if (i % 5 == 0 && i % 3 == 0) {
-    console.log("FizzBuzz");
+    // stampa.innerHTML = "<li>" + "Buzz" + "</li>";
+  } else if (i % 3 == 0) {
+    console.log("Fizz");
+    // stampa.innerHTML = "<li>" + "Fizz" + "</li>";
   } else {
     console.log(i);
+    // stampa.innerHTML = "<li>" + 'i' + "</li>";
   }
 }
-
-
-// Faccio la stampa in ul
